@@ -1,0 +1,127 @@
+/* Custom styles */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #0056b3;
+}
+
+.upper-header {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #f8f9fa;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.filter-sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .filter-sidebar {
+    margin-bottom: 20px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+.vendor-header {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.vendor-header .navbar-brand {
+  color: #ecf0f1 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.vendor-header .nav-link {
+  color: #ecf0f1 !important;
+  transition: color 0.3s ease;
+}
+
+.vendor-header .nav-link:hover {
+  color: #3498db !important;
+}
+
+.vendor-categories {
+  background-color: rgba(236, 240, 241, 0.1) !important;
+  backdrop-filter: blur(10px);
+}
+
+.vendor-categories a {
+  color: #ecf0f1 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.vendor-categories a:hover {
+  color: #3498db !important;
+}
+
+@media (max-width: 992px) {
+  .vendor-categories ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vendor-categories li {
+    margin-bottom: 10px;
+  }
+}
