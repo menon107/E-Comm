@@ -1,0 +1,117 @@
+.home-container {
+    min-height: 300vh;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+  }
+  
+  .hero-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .hero-section p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+  }
+  
+  .categories-container {
+    padding: 40px 0;
+  }
+  
+  .categories-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .category-card {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    flex-shrink: 0;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .category-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .category-image {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0;
+  }
+  
+  .category-overlay {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-card:hover .category-overlay {
+    opacity: 1;
+  }
+  
+  .category-title {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .category-card:hover .category-title {
+    opacity: 1;
+  }
+  
+  @media (max-width: 1024px) {
+    .categories-row {
+      flex-wrap: wrap;
+    }
+  
+    .category-card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .category-card {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .category-card {
+      width: 100%;
+    }
+  }
